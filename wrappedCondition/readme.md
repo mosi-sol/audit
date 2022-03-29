@@ -6,7 +6,7 @@
  data.length == 0  ->[not good impelentation erc20 token like bnb&usdt eth mainnet contracts]
  ```
  ```
- abi.decode(data, (bool))  -> [currect erc20 impelentation]
+ abi.decode(data, (bool))  -> [currect ercxxx impelentation]
  ```
  wrappedTransact  -> is an example, need IERCxxx for work trough this example
  
