@@ -1,13 +1,15 @@
  ### important: private signature
+ 
  ```
  SELECTOR = "wrappedTransfer(address,uint256)"  -> [address to, uint value]
  ```
  ```
- data.length == 0  ->[not good impelentation ercxxx token like bnb&usdt eth mainnet contracts]
+ data.length == 0  -> [for found bad impelements like bnb & usdt on eth mainnet contracts]
  ```
  ```
  abi.decode(data, (bool))  -> [currect ercxxx impelentation]
  ```
+ 
  wrappedTransact  -> is an example, need IERCxxx for work trough this example
  
  ---
