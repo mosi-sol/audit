@@ -17,7 +17,7 @@ contract WrappingConditions {
     }
 
     // ------------------------------------------
-    // bad coding
+    // bad wrapp coding
     // sometimes developer doing this type, but dont have 3 importants for doing the job
     function notWrappedTransact(address token, address to, uint value) private {
         uint256 amount = value;
