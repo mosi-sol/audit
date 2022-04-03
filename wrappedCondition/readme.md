@@ -1,4 +1,12 @@
- ### important: private signature
+## find `SELECTOR`
+
+```
+function getSelector(string calldata _func) external pure returns (bytes4) {
+    return bytes4(keccak256(bytes(_func)));
+}
+```
+
+### important: private signature
  
  ```
  SELECTOR = "wrappedTransfer(address,uint256)"  -> [address to, uint value]
