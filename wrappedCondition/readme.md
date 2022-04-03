@@ -1,4 +1,5 @@
 ## find `SELECTOR`
+like: "transfer(address,uint256)"
 
 ```
 function getSelector(string calldata _func) external pure returns (bytes4) {
