@@ -29,7 +29,7 @@ contract WrappingConditions {
     }
 }
 
-// how to find SELECTOR
+// how to find SELECTOR -> like: "transfer(address,uint256)"
 contract FindSelector {
     function getSelector(string calldata _func) external pure returns (bytes4) {
         return bytes4(keccak256(bytes(_func)));
