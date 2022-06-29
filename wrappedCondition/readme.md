@@ -1,7 +1,7 @@
 ## find `SELECTOR`
 like: "transfer(address,uint256)"
 
-```
+```js
 function getSelector(string calldata _func) external pure returns (bytes4) {
     return bytes4(keccak256(bytes(_func)));
 }
@@ -9,13 +9,13 @@ function getSelector(string calldata _func) external pure returns (bytes4) {
 
 ### important: private signature
  
- ```
+ ```js
  SELECTOR = "wrappedTransfer(address,uint256)"  -> [address to, uint value]
  ```
- ```
+ ```js
  data.length == 0  -> [for found bad impelements like bnb & usdt on eth mainnet contracts]
  ```
- ```
+ ```js
  abi.decode(data, (bool))  -> [currect ercxxx impelentation]
  ```
  
@@ -30,7 +30,7 @@ function getSelector(string calldata _func) external pure returns (bytes4) {
 ##
 
 ### example from: @ t4sk
-```
+```solidity
 contract MultiDelegatecall {
     error DelegatecallFailed();
 
